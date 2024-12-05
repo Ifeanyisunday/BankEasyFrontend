@@ -14,9 +14,8 @@ const Withdraw = () => {
     event.preventDefault();
 
     try {
-      // Send user data to the backend
       const response = await withdraw({ amount }).unwrap();
-      alert(response.message); // "User registered successfully"
+      alert(response.message); 
       setAmount("")
       navigate("/userdashboard");
     } catch (err) {
