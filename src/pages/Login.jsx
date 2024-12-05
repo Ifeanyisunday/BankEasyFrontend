@@ -19,7 +19,7 @@ export const Login = () => {
     try {
       // Send user data to the backend
       const response = await login({ username, password }).unwrap();
-      alert(response.message); // "User registered successfully"
+      alert(response.message); 
       setUsername("");
       setPassword("");
       navigate("/userdashboard");
